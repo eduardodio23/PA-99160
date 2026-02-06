@@ -1,6 +1,6 @@
 # HTML
 
-##comandos básicos:
+## comandos básicos:
 Base da página:
 ```
 <html>
