@@ -27,7 +27,6 @@ console.log("mostre apenas o nome dos alunos com nota maior ou igual a 7.0")
 const alunoscomNotaAlta = listaALunos.filter(
     aluno => aluno.nota >= 7.0
 )
-const nomesalunoscomNotaAlta = alunoscomNotaAlta.map(
-    aluno => aluno.nome
-)
-nomesalunoscomNotaAlta.forEach(nome => console.log(nome))
+alunoscomNotaAlta.forEach(aluno =>
+    console.log(`Nome: ${aluno.nome} \nNota: ${aluno.nota}`))
+ 
