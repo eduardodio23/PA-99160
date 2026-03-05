@@ -17,7 +17,7 @@ console.log(mediaTotal.toFixed(2))
 
 console.log("mostre o nome e a nota dos alunos com nota abaixo de 7.0: ")
 const alunoscomNotaBaixa = listaALunos.filter(
-    aluno => aluno.nota < 7.0   
+    aluno => aluno.nota < 7.0
 )
 alunoscomNotaBaixa.forEach(aluno =>
     console.log(`Nome: ${aluno.nome} \nNota: ${aluno.nota}`)
@@ -29,4 +29,3 @@ const alunoscomNotaAlta = listaALunos.filter(
 )
 alunoscomNotaAlta.forEach(aluno =>
     console.log(`Nome: ${aluno.nome} \nNota: ${aluno.nota}`))
- 
