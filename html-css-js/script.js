@@ -1,10 +1,12 @@
 function gerarTabuada() {
     //pegar o valor do input no HTML.
+    //parse serve para inverter os valores
     const numeroInput = document.getElementById("numeroInput")
     let numero = parseInt(numeroInput.value);
     
     // Pega o elemento HTML onde a tabuada será exibida.
     const resultadoDiv = document.getElementById("resultadoTabuada");
+    //Limpa o conteúdo anterior
     resultadoDiv.innerHTML = "";
     
     // Verifica se a entrada é um número válido.
