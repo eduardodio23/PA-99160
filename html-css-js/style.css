@@ -78,16 +78,26 @@ label{
     left: 30px;
 }
 input{
-    text-align: center;
+ 
+    /* 1. LARGURA: Ocupar mais espaço na tela */
+    width: 250px;       /* Define uma largura fixa maior */
+    
+    /* 2. ALTURA: O padding "infla" a caixa por dentro */
+    padding: 15px;      /* 15px de espaço entre o texto e a borda */
+    
+    /* 3. ESTILO VISUAL: Para combinar com o fundo */
+    font-size: 16px;    /* Letra maior dentro da caixa */
+    border-radius: 12px;/* Bordas arredondadas (estilo Aero) */
+    border: 1px solid #ccc;
+    background-color: white;
+    outline: none;      /* Tira a borda azul ao clicar */
+
 }
-
 main{
-    margin: auto;
-    height: auto;
-    width: auto;
-    background-color: rgb(145, 47, 68);
-    border-color: black;
-    border-radius: 10%;
-    box-shadow: 5px 5px #000000;
-
+    background-color: #02337ec7;
+    margin: 20px auto;
+    max-width: 500px; /*Define uma largura maxima para não ocupar a tela toda */
+    border-radius: 60px; /*usar o px para deixar um arrendondamento mais controlado */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+    padding: 40px; /* Dá espaço entre a borda e o conteúdo */
 }

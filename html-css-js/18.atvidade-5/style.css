@@ -1,0 +1,82 @@
+/*RESET DO NAVEGADOR*/
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;   /* Isso coloca o texto exatamente no meio da largura */
+    margin-top: 20px;     /* Opcional: dá um espaço do topo da página */
+    color: rgb(0, 255, 255);
+}
+
+/* Isso é um comentário em CSS */
+
+/* Estilizando o corpo da página */
+body {
+    background-image: url("assets/frutiger-aero-aesthetic.jpg");
+    font-family: Arial, sans-serif; /* Define a fonte */
+    color: #333; /* Cor do texto principal */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 0;
+    padding: 20px;
+}
+
+/* funciona como uma caixa*/
+main{
+    margin: 20px auto;
+    max-width: 500px; /*Define uma largura maxima para não ocupar a tela toda */
+    border-radius: 60px; /*usar o px para deixar um arrendondamento mais controlado */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+    padding: 40px; /* Dá espaço entre a borda e o conteúdo */
+}
+
+.container{
+    display: flex;
+    flex-direction: column; /* Coloca um item embaixo do outro */
+    align-items: center; /* Centraliza na horizontal */
+    gap: 15px; /* Cria um espaço igual entre cada elemento */
+    padding: 30px;
+}
+
+
+/* Estilizando os inputs para ficarem bonitos e alinhados */
+input{
+ 
+    /* 1. LARGURA: Ocupar mais espaço na tela */
+    width: 250px;       /* Define uma largura fixa maior */
+    
+    /* 2. ALTURA: O padding "infla" a caixa por dentro */
+    padding: 15px;      /* 15px de espaço entre o texto e a borda */
+    
+    /* 3. ESTILO VISUAL: Para combinar com o fundo */
+    font-size: 16px;    /* Letra maior dentro da caixa */
+    border-radius: 12px;/* Bordas arredondadas (estilo Aero) */
+    border: 1px solid #ccc;
+    background-color: white;
+    outline: none;      /* Tira a borda azul ao clicar */
+
+}
+label{
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+
+}
+
+#gerarBotao {
+    background-color: #8a8181;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: 0.3s;
+
+}
+
+#gerarBotao:hover{
+    background-color: #333;
+}
+
+
