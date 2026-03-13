@@ -1,0 +1,156 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/main.jpg");
+    background-size: cover; /* Essencial: faz a imagem cobrir a tela inteira */
+    background-position: center; /* Mantém o Gojo sempre centralizado */
+    background-repeat: no-repeat;
+    height: 100vh; /* Garante que o fundo ocupe 100% da altura da tela */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Mudei para branco para dar leitura no fundo escuro */
+    overflow: hidden; /* Tira a barra de rolagem (opcional) */
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px black; /* Sombra preta para o título destacar do fundo */
+    font-size: 3rem;
+}
+
+main {
+    /* Removi o max-width: 500px para que a caixa possa ir de uma ponta a outra da tela */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%; /* Dá um pequeno respiro nas bordas da tela */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; /* Um em cada ponta (Vermelho e Azul) */
+    align-items: center;
+    width: 100%;
+    height: 60vh; /* Empurra os itens para o meio da tela, na altura dos globos */
+    position: relative; /* Necessário se quiser colocar o botão no centro exato depois */
+}
+
+/* Tira a mensagem de erro do caminho das caixas */
+#resultado {
+    position: absolute;
+    bottom: -120px; /* Coloca a mensagem bem abaixo do botão roxo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+
+/* Criamos essa classe para organizar cada bloquinho de pergunta */
+.grupo-pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto meio transparente para ler o texto */
+    padding: 20px;
+    border-radius: 12px;
+    gap: 10px; /* Dá espaço entre o texto e a caixinha de digitar */
+}
+
+/* Estilo para as caixas de digitar ficarem bonitas */
+.grupo-pergunta input {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* --- EFEITOS NEON DAS ESFERAS --- */
+.grupo-pergunta:nth-child(1) {
+    /* Caixa Vermelha */
+    margin-left: 120px; /* Empurra para a direita (Aumente se precisar ir mais pro meio da bola) */
+    margin-top: 20px; /* Empurra para baixo (Use valor negativo ex: -20px para subir) */
+    
+    border: 2px solid #ff3333;
+    box-shadow: 0 0 20px #ff3333;
+}
+
+.grupo-pergunta:nth-child(2) {
+    /* Caixa Azul */
+    margin-right: 120px; /* Empurra para a esquerda (Aumente se precisar ir mais pro meio da bola) */
+    margin-top: 20px; /* Empurra para baixo (Use valor negativo ex: -20px para subir) */
+    
+    border: 2px solid #00ccff;
+    box-shadow: 0 0 20px #00ccff;
+}
+
+/* Isso vai arrancar o botão do "fluxo" normal e travá-lo no meio da tela */
+#expansaoDominio {
+    position: absolute;
+    left: 50%; /* Joga para o meio da tela */
+    transform: translateX(-50%); /* Centraliza perfeitamente no próprio eixo */
+    bottom: -80px; /* Desce o botão para debaixo das mãos do Gojo */
+    
+    /* Estilo para deixar o botão combinando com o Vazio Roxo */
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #800080; /* Cor Roxa */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 25px #a020f0; /* Brilho Roxo */
+    transition: 0.3s;
+}
+
+#expansaoDominio:hover {
+    background-color: #a020f0;
+    box-shadow: 0 0 40px #a020f0;
+}
+
+/* --- ESTILOS DA SEGUNDA PÁGINA (RESULTADO) --- */
+.caixa-roxa {
+    background-color: rgba(0, 0, 0, 0.85); /* Fundo bem escuro */
+    border: 3px solid #800080; /* Borda roxa */
+    box-shadow: 0 0 40px #a020f0; /* Brilho neon roxo */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#botaoVoltar {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#botaoVoltar:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+
