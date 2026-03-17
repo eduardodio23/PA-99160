@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Aposentadoria</title>
+    <title>Simulador de Aposentadoria - Meu INSS</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body>
-    <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://via.placeholder.com/150x50?text=LOGOTIPO+DA+EMPRESA" alt="Logotipo">
-    </div>
-    
-    <h1>Verificação de Aposentadoria</h1>
 
-    <label for="codigo">Cadastro do Empregado:</label><br>
-    <input type="text" id="codigo" placeholder="Ex: 12345"><br><br>
+    <main class="simulador-container">
+        
+        <header class="simulador-header">
+            <div class="gov-bar">
+                <span class="gov-text">Portal Gov.br</span>
+            </div>
+            <h1 class="simulador-title">Simulador de Aposentadoria</h1>
+            <p class="simulador-subtitle">Verifique sua elegibilidade de forma rápida e segura.</p>
+        </header>
 
-    <label for="anoNasc">Ano de Nascimento: </label><br>
-    <input type="number" id="anoNasc" placeholder="Ex: 1960"><br><br>
+        <form id="simulador-form" class="simulador-form" action="#" method="POST">
+            <fieldset class="simulador-fieldset">
+                <legend class="simulador-legend">Dados do Segurado</legend>
+                
+                <div class="input-group">
+                    <label for="codigo">Código do Empregado (opcional)</label>
+                    <input type="text" id="codigo" name="codigo" placeholder="Ex: 12345">
+                </div>
 
-    <label for="tempoTrabalho">Tempo de Trabalho (em anos):</label><br>
-    <input type="number" id="tempoTrabalho" placeholder="Ex: 30"><br><br>
+                <div class="input-group">
+                    <label for="anoNasc">Ano de Nascimento <span class="required">*</span></label>
+                    <input type="number" id="anoNasc" name="anoNasc" required min="1900" max="2100" placeholder="Ex: 1960">
+                </div>
 
-    <button id="btnVerificar">Analisar Empregado</button>
+                <div class="input-group">
+                    <label for="tempoTrabalho">Tempo de Contribuição (anos) <span class="required">*</span></label>
+                    <input type="number" id="tempoTrabalho" name="tempoTrabalho" required min="0" placeholder="Ex: 35">
+                </div>
+            </fieldset>
 
-    <div id="resultado" style="margin-top: 20px;"></div>
+            <button type="submit" id="btnVerificar" class="btn-check">Verificar Elegibilidade</button>
+        </form>
+
+        <section id="resultado" class="result-area" aria-live="polite">
+            </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>

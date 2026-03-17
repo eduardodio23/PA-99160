@@ -1,0 +1,105 @@
+/* Importando fontes com visual épico e sombrio */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Oswald:wght@400;700&display=swap');
+
+/* O fundo da tela será o interior do Santuário Malevolente */
+body {
+    background-color: #050505;
+    background-image: radial-gradient(circle, #3a0000 0%, #000000 80%);
+    color: #e0e0e0;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* O título com brilho amaldiçoado */
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #ff3333;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #8b0000;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Texto do label */
+label {
+    font-size: 1.2rem;
+    color: #ff6666;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Caixa de digitar com bordas vermelhas */
+input[type="number"] {
+    background-color: #111;
+    border: 2px solid #8b0000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 25px;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Brilho laranja de fogo ao clicar para digitar */
+input[type="number"]:focus {
+    border-color: #ff4500;
+    box-shadow: 0 0 15px #ff4500;
+}
+
+/* O botão que invoca a técnica Fuga (Flecha de Fogo) */
+button {
+    background: linear-gradient(90deg, #8b0000, #ff4500, #8b0000);
+    background-size: 200% auto;
+    color: white;
+    border: 2px solid #ffaa00;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 15px #ff4500;
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+button:hover {
+    background-position: right center;
+    box-shadow: 0 0 25px #ff4500, 0 0 45px #ff0000;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* A caixa onde o seu JavaScript vai jogar o resultado */
+#resultado {
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #8b0000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 15px rgba(255, 0, 0, 0.3);
+    min-width: 300px;
+    max-width: 500px;
+}
+
+/* Ajustando o texto injetado pelo seu JS para ficar legível no fundo escuro */
+#resultado p {
+    font-size: 1.3rem;
+    margin: 0;
+    text-shadow: 1px 1px 5px #000 !important; /* Reforça a sombra que você já colocou no JS */
+}

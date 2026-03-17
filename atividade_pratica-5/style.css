@@ -1,0 +1,181 @@
+/* Importando uma fonte limpa e moderna (Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Variáveis de cores do Gov.br/Meu INSS */
+:root {
+    --primary-blue: #1351b4;
+    --dark-blue: #0c326f;
+    --gov-blue: #1d5b94;
+    --accent-green: #2e8b57;
+    --accent-red: #d32f2f;
+    --light-grey: #f4f4f4;
+    --medium-grey: #e0e0e0;
+    --dark-grey: #333333;
+    --text-color: #555555;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container principal simulando o painel */
+.simulador-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden; /* Para manter o cantinho arredondado da gov-bar */
+}
+
+/* Cabeçalho */
+.simulador-header {
+    background-color: var(--primary-blue);
+    padding: 20px 30px;
+    color: #ffffff;
+    border-bottom: 6px solid var(--gov-blue);
+}
+
+.gov-bar {
+    text-align: right;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+.simulador-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.simulador-subtitle {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Formulário e Fieldset */
+.simulador-form {
+    padding: 20px 30px;
+}
+
+.simulador-fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.simulador-legend {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gov-blue);
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--dark-grey);
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--medium-grey);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--gov-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(19, 81, 180, 0.1);
+}
+
+.required {
+    color: var(--accent-red);
+}
+
+/* Botão Moderno */
+.btn-check {
+    background-color: var(--gov-blue);
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px; /* Botão arredondado clássico */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-check:hover {
+    background-color: var(--dark-blue);
+}
+
+.btn-check:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Área de Resultado */
+.result-area {
+    margin: 0 30px 30px;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    display: none; /* Escondido por padrão */
+}
+
+.result-box {
+    padding: 20px;
+    border-radius: 4px;
+    border-left: 6px solid var(--medium-grey); /* Padrão de feedback lateral */
+}
+
+/* Feedback lateral para o status */
+.result-box.elegivel {
+    background-color: #e8f5e9;
+    border-left-color: var(--accent-green);
+    color: #1b5e20;
+}
+
+.result-box.nao-elegivel {
+    background-color: #fce4ec;
+    border-left-color: var(--accent-red);
+    color: #c62828;
+}
+
+.result-box p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.status-title {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

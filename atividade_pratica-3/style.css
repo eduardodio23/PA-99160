@@ -1,0 +1,85 @@
+/* Fonte limpa e padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fundo cinza bem clarinho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* O "cartão" branco no meio da tela */
+.urna-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-top: 6px solid #009c3b; /* Detalhe em verde Brasil */
+}
+
+h1 {
+    color: #002776; /* Azul Brasil */
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Campo de digitar a idade */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+/* Fica com borda amarela ao clicar */
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ffdf00; /* Amarelo Brasil */
+}
+
+/* Botão de analisar */
+button {
+    background-color: #002776;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #001a4f; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Espaçamento para o resultado que o JS vai gerar */
+#resultado {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+/* Tirando a margem extra do parágrafo que você gerou no JS */
+#resultado p {
+    margin: 0;
+}
