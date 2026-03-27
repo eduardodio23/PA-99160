@@ -1,0 +1,11 @@
+.Mensagem h1 {
+    color:rgb(160, 53, 53);
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.Mensagem p {
+    color: rgb(66, 133, 0);
+    margin: 10px 0;
+    font-size: 18px;
+}
