@@ -1,0 +1,141 @@
+.sobre-nos {
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #e6f7ff 0%, #fff9e6 100%);
+}
+
+.sobre-nos h1 {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #ff6600 0%, #0066cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.sobre-nos h2 {
+    color: #0066cc;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.sobre-nos p {
+    color: #333;
+    font-weight: 500;
+}
+
+.sobre-nos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.sobre-nos-text h2 {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #0066cc 0%, #ff6600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0;
+}
+
+.sobre-nos-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.sobre-nos-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-nos-text li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #333;
+}
+
+.sobre-nos-text li::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    color: #ff6600;
+    font-size: 1.2rem;
+}
+
+.sobre-nos-image {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nos-image img {
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 3px solid #0066cc;
+}
+
+.sobre-nos-team {
+    margin-top: 3rem;
+}
+
+.sobre-nos-team h2 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, #ff6600 0%, #0066cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 102, 204, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 102, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 102, 0, 0.3);
+    border-color: #ff6600;
+}
+
+.team-member h3 {
+    margin: 1rem 0 0.5rem 0;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.team-member p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .sobre-nos-content {
+        grid-template-columns: 1fr;
+    }
+}
