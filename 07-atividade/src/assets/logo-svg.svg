@@ -1,0 +1,13 @@
+<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="transparent" />
+  
+  <text x="50%" y="55%" font-family="Georgia, serif" font-size="48" font-style="italic" font-weight="bold" fill="#ECA8B5" text-anchor="middle">
+    Dona Cida
+  </text>
+  
+  <text x="50%" y="85%" font-family="Arial, sans-serif" font-size="14" letter-spacing="5" fill="#5C4044" text-anchor="middle">
+    DELICATESSEN
+  </text>
+  
+  <path d="M 100 105 Q 200 120 300 105" fill="transparent" stroke="#FDF8F5" stroke-width="3" />
+</svg>

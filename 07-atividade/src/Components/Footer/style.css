@@ -1,0 +1,20 @@
+footer {
+    background-color: #FFF8DC;
+    /* Bege */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #F5DEB3;
+    margin-top: auto;
+}
+
+footer div {
+    font-size: 0.9em;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer strong {
+    color: #FF69B4;
+    /* Rosa */
+}

@@ -1,0 +1,44 @@
+.sobre-nos {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8DC;
+    /* Bege */
+    color: #3498db;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 60vh;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos h1 {
+    color: #FF69B4;
+    /* Rosa */
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.sobre-nos ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sobre-nos li {
+    background-color: #FFFFFF;
+    /* Branco */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
