@@ -2,23 +2,15 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "mysql2": "^3.22.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "mysql2": "^3.22.4",
     "sequelize": "^6.37.8"
   },
   "name": "pa-99160",
   "version": "1.0.0",
-  "description": "Trazendo possíveis mudanças no Github:\r ```\r git pull\r ```",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.1"
-  },
+  "devDependencies": {},
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

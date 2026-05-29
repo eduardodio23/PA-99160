@@ -1,0 +1,12 @@
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: center;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
