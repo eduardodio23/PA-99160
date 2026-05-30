@@ -1,12 +1,23 @@
 .header{
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     display: flex;
-    text-align: center;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.25rem;
+    height: 72px;
+    box-sizing: border-box;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.header h1{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
+
+.header nav{display:flex;align-items:center;gap:1rem}
+
+.header nav a{color:#fff;text-decoration:none;padding:0.25rem 0.5rem;border-radius:6px;transition:background .12s,transform .12s}
+.header nav a:hover{background:rgba(255,255,255,0.04);transform:translateY(-2px)}
+
+.header .logo-small{display:inline-block;width:120px;height:36px;background-repeat:no-repeat;background-position:center;background-size:contain}

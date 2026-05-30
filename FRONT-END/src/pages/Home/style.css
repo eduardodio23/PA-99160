@@ -1,4 +1,105 @@
-.home{
-    text-align: center;
-    font-family: 'Helvetica';
+
+
+:root{
+    --senai-red: #e4002b;
+    --senai-blue: #003399;
+    --accent: #ffb020;
+    --bg: #f7f9fb;
+    --card-bg: #ffffff;
+    --muted: #6b7280;
+    --text: #091024;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+    padding:3.5rem 2rem;
+    background: linear-gradient(135deg, rgba(0,51,153,0.06) 0%, rgba(228,0,43,0.03) 100%);
+    border-bottom:1px solid rgba(2,6,23,0.04);
+    transition:background .2s ease,transform .12s ease;
+}
+
+.hero-content{
+    max-width:680px;
+}
+
+.hero h1{
+    font-size:2.25rem;
+    margin:0 0 0.5rem 0;
+    color:var(--senai-blue);
+    transition:color .12s ease,transform .12s ease;
+}
+
+.hero p{
+    color:var(--muted);
+    margin:0 0 1.25rem 0;
+    line-height:1.5;
+}
+
+.hero .actions{
+    display:flex;
+    gap:1rem;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    padding:0.7rem 1.1rem;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+    border:0;
+}
+
+.btn-primary{
+    background:var(--senai-red);
+    color:white;
+}
+
+.btn-outline{
+    background:transparent;
+    color:var(--senai-blue);
+    border:2px solid rgba(0,51,153,0.08);
+}
+
+.senai-logo{
+    width:160px;
+    height:48px;
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size:contain;
+}
+/* to use: add SVG at public/senai-bahia.svg and set this background */
+.senai-logo--use{
+    background-image: url('/senai-bahia.svg');
+}
+
+.hero .senai-cta{display:inline-flex;align-items:center;gap:.6rem;padding:.6rem 1rem;border-radius:8px;background:var(--accent-2);color:#fff;font-weight:700;box-shadow:0 8px 22px rgba(228,0,43,0.08);transition:transform .12s ease}
+.hero .senai-cta:hover{transform:translateY(-3px)}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:1rem;
+    padding:2rem;
+}
+
+.card{
+    background:var(--card-bg);
+    padding:1.25rem;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(15,23,42,0.06);
+}
+
+.card h3{
+    margin:0 0 0.5rem 0;
+    color:var(--senai-blue);
+}
+
+@media (max-width:720px){
+    .hero{flex-direction:column;align-items:flex-start}
+    .hero h1{font-size:1.6rem}
 }
